@@ -113,8 +113,23 @@ ul li:first-child {
   }
   .content .image {
     width: 100%;
+  }
 }
+@media (min-width: 751px) and (max-width: 1000px) {
+  .content {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content .image img {
+    position: relative;
+    right: 35px;
+  } 
 }
+
 .content .text h2 {
   font-size: 40px;
   letter-spacing: 2px;
