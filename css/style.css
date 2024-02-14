@@ -9,6 +9,14 @@
   width: 100%;
   color: white;
   overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 750px) {
+  .project {
+    overflow: auto;
+    min-height: 140vh;
+  }
 }
 
 /* Navbar */
@@ -40,6 +48,10 @@ ul li a {
   margin: 0px 15px;
   display: flex;
   align-items: center;
+  transition: 0.3s;
+}
+ul li a:hover {
+  transform: translateY(-3px);
 }
 ul li:first-child {
   margin-right: auto;
@@ -127,7 +139,7 @@ ul li:first-child {
   .content .image img {
     position: relative;
     right: 35px;
-  } 
+  }
 }
 
 .content .text h2 {
@@ -150,4 +162,38 @@ ul li:first-child {
 }
 .content .image {
   width: 30%;
+}
+
+/* icons */
+
+.icons img {
+  width: 40px;
+  transition: 0.5s;
+}
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 1000px) {
+  .icons {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .icons img{
+    width: 45px;
+  }
+}
+@media (max-width: 999px) {
+  .icons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 380px) and (max-width: 500px) {
+  .icons img {
+    width: 35px;
+  }
 }
